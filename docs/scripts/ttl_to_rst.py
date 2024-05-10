@@ -135,12 +135,12 @@ def rendering_workflow():
 
     # PAGES
     ttl_modules = [
-        {"section title": "SKZ Terms",
-         "path": "./skz.ttl"}
+        {"section title": "FOM Terms",
+         "path": "./fom.ttl"}
     ]
 
     # GENERATE PAGES
-    rst_filename = "skz.rst"
+    rst_filename = "fom.rst"
 
     rst = render_rst_top()
 
