@@ -1,0 +1,311 @@
+
+===========
+Class Index
+===========
+
+FOM Terms
+=========
+
+.. raw:: html
+
+   <div id="fom_1e508cee_09a1_53cd_81e0_a53df4ed4e9c"></div>
+
+CoatingDistance
+---------------
+
+* https://w3id.org/fom/public/ontology/#fom_1e508cee_09a1_53cd_81e0_a53df4ed4e9c
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Distance coated</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_2d4ade53_afeb_53c4_b6a7_5e10f0d3f424"></div>
+
+CoatingNumberOfStripes
+----------------------
+
+* https://w3id.org/fom/public/ontology/#fom_2d4ade53_afeb_53c4_b6a7_5e10f0d3f424
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_ebbf55f4_c5ca_585d_8772_a2534f9fc154"></div>
+
+CoatingPostEndTotal
+-------------------
+
+* https://w3id.org/fom/public/ontology/#fom_ebbf55f4_c5ca_585d_8772_a2534f9fc154
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Coating post end total volume</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_268b91cd_b48e_5636_845c_49cb7e98078a"></div>
+
+CoatingPreEndStopTotal
+----------------------
+
+* https://w3id.org/fom/public/ontology/#fom_268b91cd_b48e_5636_845c_49cb7e98078a
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Coating preend stop total volume</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_845880dd_1a03_5ca1_9190_f1e83e947350"></div>
+
+CoatingPumpRate
+---------------
+
+* https://w3id.org/fom/public/ontology/#fom_845880dd_1a03_5ca1_9190_f1e83e947350
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">rate of pumping</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_79415f6c_b216_5265_866f_08c1fd15fd11"></div>
+
+CoatingPumpRecipeControlled
+---------------------------
+
+* https://w3id.org/fom/public/ontology/#fom_79415f6c_b216_5265_866f_08c1fd15fd11
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">recipe control of coatinging pump</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_dfa14f18_61aa_50d8_bf61_d65285e30a89"></div>
+
+CoatingSpeed
+------------
+
+* https://w3id.org/fom/public/ontology/#fom_dfa14f18_61aa_50d8_bf61_d65285e30a89
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Speed of coating</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_fde94ae2_a0b3_564f_b832_b1434258e423"></div>
+
+CoatingStartPosition
+--------------------
+
+* https://w3id.org/fom/public/ontology/#fom_fde94ae2_a0b3_564f_b832_b1434258e423
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Starting position of coating</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_c4b14e3a_1606_5711_9881_9f8732962dbd"></div>
+
+CoatingStripeWidth
+------------------
+
+* https://w3id.org/fom/public/ontology/#fom_c4b14e3a_1606_5711_9881_9f8732962dbd
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Width of coating strip</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_930a48d9_de83_5a41_bd81_09d25c7779a4"></div>
+
+CoatingSyringeDiameter
+----------------------
+
+* https://w3id.org/fom/public/ontology/#fom_930a48d9_de83_5a41_bd81_09d25c7779a4
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Diameter of coating syringe</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_e8f40b94_5805_513c_ab3a_a019e0fd09a1"></div>
+
+CoatingWetFilmThickness
+-----------------------
+
+* https://w3id.org/fom/public/ontology/#fom_e8f40b94_5805_513c_ab3a_a019e0fd09a1
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">wet film thickness</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_de271269_6013_5433_aecc_d6e5a6e60e88"></div>
+
+ContinuousCoatingPumprate
+-------------------------
+
+* https://w3id.org/fom/public/ontology/#fom_de271269_6013_5433_aecc_d6e5a6e60e88
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Continuous coating pump rate</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_d3bc2677_5da7_5d02_a62d_abc841ce4610"></div>
+
+HeatingBedSetpoint
+------------------
+
+* https://w3id.org/fom/public/ontology/#fom_d3bc2677_5da7_5d02_a62d_abc841ce4610
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Heating bed set point temperature</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_c26b582d_5ea4_5048_b99a_3872d7cb6054"></div>
+
+HeatingSlotDieSetpoint
+----------------------
+
+* https://w3id.org/fom/public/ontology/#fom_c26b582d_5ea4_5048_b99a_3872d7cb6054
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Heating slot die temperature</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_484cd3c8_8a6d_5633_a748_d42ee11bd0e2"></div>
+
+HeatingSyringeSetpoint
+----------------------
+
+* https://w3id.org/fom/public/ontology/#fom_484cd3c8_8a6d_5633_a748_d42ee11bd0e2
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Heating syringe set point temperature</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="fom_7aef7437_967b_5e8f_8220_3184aa7a36ae"></div>
+
+TargetSlotDieHeight
+-------------------
+
+* https://w3id.org/fom/public/ontology/#fom_7aef7437_967b_5e8f_8220_3184aa7a36ae
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Target slot die height</td>
+  </tr>
+  </table>
+
+
+
+    
+        
