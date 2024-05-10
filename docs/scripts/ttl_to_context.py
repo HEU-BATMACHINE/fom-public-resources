@@ -82,7 +82,7 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
 
 
 # Example usage
-filename = 'skz-inferred.ttl'
+filename = 'fom-inferred.ttl'
 parent_dir = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(parent_dir, '..', filename)
 
