@@ -1,0 +1,138 @@
+@prefix : <https://w3id.org/fom/public/ontology#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/fom/public/ontology> a owl:Ontology ;
+    dcterms:contributor "SINTEF"@en,
+        "SINTEF Industry"@en ;
+    dcterms:creator "Sridevi Krishnamurthi, Simon Clark"@en ;
+    dcterms:title "Slot die coating-FOM domain ontology"@en ;
+    owl:imports <https://w3id.org/emmo/1.0.0-beta7/disciplines/prefixedunits>,
+        <https://w3id.org/emmo/domain/battery/battery-inferred> ;
+    owl:versionInfo "0.1.0"@en .
+
+:EMMO_1e508cee_09a1_53cd_81e0_a53df4ed4e9c a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:MilliMetre ],
+        emmo:EMMO_6ee9304e_54b7_4594_8354_0790138dffb8 ;
+    skos:prefLabel "CoatingDistance"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Distance coated"@en .
+
+:EMMO_2d4ade53_afeb_53c4_b6a7_5e10f0d3f424 a owl:Class ;
+    rdfs:subClassOf emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
+    skos:prefLabel "CoatingNumberOfStripes"@en .
+
+:EMMO_484cd3c8_8a6d_5633_a748_d42ee11bd0e2 a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:DegreeCelsius ],
+        emmo:EMMO_66bc9029_f473_45ff_bab9_c3509ff37a22 ;
+    skos:prefLabel "HeatingSyringeSetpoint"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Heating syringe set point temperature"@en .
+
+:EMMO_79415f6c_b216_5265_866f_08c1fd15fd11 a owl:Class ;
+    rdfs:subClassOf emmo:EMMO_54dc83cb_06e1_4739_9e45_bc09cead7f48 ;
+    skos:prefLabel "CoatingPumpRecipeControlled"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "recipe control of coatinging pump"@en .
+
+:EMMO_7aef7437_967b_5e8f_8220_3184aa7a36ae a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:MilliMetre ],
+        emmo:EMMO_08bcf1d6_e719_46c8_bb21_24bc9bf34dba ;
+    skos:prefLabel "TargetSlotDieHeight"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Target slot die height"@en .
+
+:EMMO_845880dd_1a03_5ca1_9190_f1e83e947350 a owl:Class ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "rate of pumping"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:MicroLitrePerMinute ],
+        emmo:EMMO_b385b94e_ffff_47a2_8971_856f92dd786e ;
+    skos:prefLabel "CoatingPumpRate"@en .
+
+:EMMO_930a48d9_de83_5a41_bd81_09d25c7779a4 a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:MilliMetre ],
+        emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+    skos:prefLabel "CoatingSyringeDiameter"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Diameter of coating syringe"@en .
+
+:EMMO_c26b582d_5ea4_5048_b99a_3872d7cb6054 a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:DegreeCelsius ],
+        emmo:EMMO_66bc9029_f473_45ff_bab9_c3509ff37a22 ;
+    skos:prefLabel "HeatingSlotDieSetpoint"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Heating slot die temperature"@en .
+
+:EMMO_c4b14e3a_1606_5711_9881_9f8732962dbd a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:MilliMetre ],
+        emmo:EMMO_e4de48b1_dabb_4490_ac2b_040f926c64f0 ;
+    skos:prefLabel "CoatingStripeWidth"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Width of coating strip"@en .
+
+
+:EMMO_d3bc2677_5da7_5d02_a62d_abc841ce4610 a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:DegreeCelsius ],
+        emmo:EMMO_66bc9029_f473_45ff_bab9_c3509ff37a22 ;
+    skos:prefLabel "HeatingBedSetpoint"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Heating bed set point temperature"@en .
+
+:EMMO_de271269_6013_5433_aecc_d6e5a6e60e88 a owl:Class ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Continuous coating pump rate"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:MicroLitrePerMinute ],
+        emmo:EMMO_b385b94e_ffff_47a2_8971_856f92dd786e ;
+    skos:prefLabel "ContinuousCoatingPumprate"@en .
+
+:EMMO_dfa14f18_61aa_50d8_bf61_d65285e30a89 a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:MetrePerMinute ],
+        emmo:EMMO_81369540_1b0e_471b_9bae_6801af22800e ;
+    skos:prefLabel "CoatingSpeed"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Speed of coating"@en .
+
+:EMMO_e8f40b94_5805_513c_ab3a_a019e0fd09a1 a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:MicroMetre ],
+        emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+    skos:prefLabel "CoatingWetFilmThickness"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "wet film thickness"@en .
+
+:EMMO_ebbf55f4_c5ca_585d_8772_a2534f9fc154 a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:MicroLitre ],
+        emmo:EMMO_f1a51559_aa3d_43a0_9327_918039f0dfed ;
+    skos:prefLabel "CoatingPostEndTotal"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Coating post end total volume"@en .
+
+:EMMO_fde94ae2_a0b3_564f_b832_b1434258e423 a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:MilliMetre ],
+        emmo:EMMO_6ee9304e_54b7_4594_8354_0790138dffb8 ;
+    skos:prefLabel "CoatingStartPosition"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Starting position of coating"@en .
+
+:EMMO_268b91cd_b48e_5636_845c_49cb7e98078a a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:MicroLitre ],
+        emmo:EMMO_f1a51559_aa3d_43a0_9327_918039f0dfed ;
+    skos:prefLabel "CoatingPreEndStopTotal"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Coating preend stop total volume"@en .
+
