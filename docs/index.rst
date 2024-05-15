@@ -6,7 +6,7 @@
    Class Index <skz-ontology>
 
 
-SKZ Ontology
+FOM Ontology
 ================================
 
-Welcome to the **SKZ Ontology**, a semantic resource with essential terms and relationships to describe SKZ resources.
+Welcome to the **FOM Ontology**, a semantic resource with essential terms and relationships to describe FOM resources.
