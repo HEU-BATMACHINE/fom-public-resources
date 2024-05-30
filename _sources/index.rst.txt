@@ -3,7 +3,7 @@
    :includehidden:
    :hidden:
 
-   Class Index <fom-ontology>
+   Class Index <pages/fom>
 
 
 FOM Ontology
