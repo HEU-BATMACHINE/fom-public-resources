@@ -1,0 +1,119 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix battinfo: <http://w3id.org/battinfo#> .
+@prefix chameo: <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+
+@prefix equipment: <https://w3id.org/batteryequipment/public/ontology#> .
+@prefix coater: <https://w3id.org/coater/public/ontology#> .
+
+
+@base <https://w3id.org/fom/public/ontology> .
+@prefix fom: <https://w3id.org/fom/public/ontology#> .
+
+# Ontology Declaration
+# Declare this as an ontology and import BBO ontology
+<https://w3id.org/fom/public/ontology> rdf:type owl:Ontology ;
+    owl:imports <https://w3id.org/emmo/1.0.0-rc1> ,
+                <https://w3id.org/emmo/domain/characterisation-methodology/1.0.0/chameo-inferred> ;
+    owl:imports <https://w3id.org/emmo/1.0.0-beta7/disciplines/manufacturing> ;
+    owl:imports <https://raw.githubusercontent.com/HEU-BATMACHINE/equipment-public-resources/refs/heads/main/equipment.ttl> ;
+    #owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/chameo-inferred> ;
+    #owl:imports < https://raw.githubusercontent.com/emmo-repo/domain-characterisation-methodology/refs/heads/main/chameo.ttl> ;
+    #owl:imports <http://www.w3.org/ns/csvw> ;
+    rdfs:label "Custom ontology for describing FOM coater for batteries" ;
+    rdfs:comment "An extension of the EMMO ontology defining the equipment and processes for the coater equipment." ;
+    dcterms:title "Custom ontology for describing FOM coater for batteries"@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    vann:preferredNamespacePrefix "coater" ;
+    vann:preferredNamespaceUri    <https://w3id.org/fom/public/ontology#> ;
+    dcterms:created   "2025-10-23"^^xsd:date ;
+    dcterms:issued   "2025-10-23"^^xsd:date ;
+    dcterms:modified "2025-11-21"^^xsd:date ;
+    dcterms:publisher "SINTEF" ;
+    dcterms:contributor "SINTEF"@en ,"SINTEF Industry"@en ;
+    dcterms:creator "Sridevi Krishnamurthi (SINTEF)"@en ,
+                    "Simon Clark (SINTEF)"@en ,
+                    "Sylvain Gouttebroze (SINTEF)"@en ;
+    owl:versionIRI  <https://w3id.org/fom/public/ontology/1.0.0> ;
+    owl:versionInfo "1.0.0"@en .
+#-----------------------------------
+# section to deal with properties
+#-----------------------------------
+
+# FOM coater requires the addition of the classes for inlet and outlet of the hotair dryer
+
+# Define the Furnace Inlet class
+fom:HotAir_Inlet rdf:type owl:Class ;
+    rdfs:subClassOf equipment:ManufacturingComponent ;
+    rdfs:comment "Inlet component of the hot air furnace."@en ;
+    rdfs:label "HotAir_Inlet"@en ;
+    skos:prefLabel "HotAir_Inlet"@en .
+
+# Define the Furnace Outlet class
+fom:HotAir_Outlet rdf:type owl:Class ;
+    rdfs:subClassOf equipment:ManufacturingComponent ;
+    rdfs:comment "Outlet component of the hot air furnace."@en ;
+    rdfs:label "HotAir_Outlet"@en ;
+    skos:prefLabel "HotAir_Outlet"@en .
+
+fom:HotAir_Inlet owl:disjointWith fom:HotAir_Outlet .
+
+# Define the IRheater component class
+fom:IRheater rdf:type owl:Class ;
+    rdfs:subClassOf equipment:ManufacturingComponent ;
+    rdfs:comment "IR heater of the hot air furnace."@en ;
+    rdfs:label "IRheater"@en ;
+    skos:prefLabel "IRheater"@en .
+
+
+# FOM dryer requires subclasses to impose the existence of the IR and inlet and outlet components
+
+# Define the Oven class
+fom:Oven rdf:type owl:Class ;
+    rdfs:subClassOf coater:DryerDevice ;
+    rdfs:comment "Oven in FOM equipment."@en ;
+    rdfs:label "Oven"@en ;
+    skos:prefLabel "Oven"@en .
+
+fom:Oven rdfs:subClassOf [
+        rdf:type owl:Restriction ;
+        owl:onProperty equipment:hasComponent ;
+        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+        owl:onClass fom:IRheater] .
+
+fom:Oven rdfs:subClassOf [
+       rdf:type owl:Restriction ;
+       owl:onProperty equipment:hasComponent ;
+       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+       owl:onClass  fom:HotAir_Inlet] .
+
+fom:Oven rdfs:subClassOf [
+       rdf:type owl:Restriction ;
+       owl:onProperty equipment:hasComponent ;
+       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+       owl:onClass  fom:HotAir_Outlet] .
+
+# create the three oven subclasses
+fom:Oven1 rdf:type owl:Class ;
+    rdfs:subClassOf fom:Oven ;
+    rdfs:comment "First oven in FOM coater."@en ;
+    rdfs:label "Oven1"@en ;
+    skos:prefLabel "Oven1"@en .
+fom:Oven2 rdf:type owl:Class ;
+    rdfs:subClassOf fom:Oven ;
+    rdfs:comment "Second oven in FOM coater."@en ;
+    rdfs:label "Oven2"@en ;
+    skos:prefLabel "Oven2"@en .
+fom:Oven3 rdf:type owl:Class ;
+    rdfs:subClassOf fom:Oven ;
+    rdfs:comment "Third oven in FOM coater."@en ;
+    rdfs:label "Oven3"@en ;
+    skos:prefLabel "Oven3"@en .
